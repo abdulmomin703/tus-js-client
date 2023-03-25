@@ -750,7 +750,7 @@ var BaseUpload = /*#__PURE__*/function () {
       var _this7 = this;
 
       var req = this._openRequest('HEAD', this.url);
-      var metadata = encodeMetadata(_this3.options.metadata);
+      var metadata = encodeMetadata(_this7.options.metadata);
 
       if (metadata !== '') {
         req.setHeader('Upload-Metadata', metadata);
@@ -862,7 +862,7 @@ var BaseUpload = /*#__PURE__*/function () {
       } else {
         req = this._openRequest('PATCH', this.url);
       }
-      var metadata = encodeMetadata(_this3.options.metadata);
+      var metadata = encodeMetadata(_this8.options.metadata);
 
       if (metadata !== '') {
         req.setHeader('Upload-Metadata', metadata);
